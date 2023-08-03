@@ -965,6 +965,6 @@ a:focus {
 /*# sourceMappingURL=style.css.map */
 
 .swiper {
-  width: 100%;
+  width: auto;
   height: 300px;
 }
