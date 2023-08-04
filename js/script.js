@@ -5,7 +5,7 @@ $(document).ready(function() {
         $("#chatbox").append(userMessageDiv);
         typeMessage(message, userMessageDiv);
 
-        fetch("https://us-central1-haji-a6321.cloudfunctions.net/chatAPI-1", {
+        fetch("https://us-central1-haji-a6321.cloudfunctions.net/chatAPI", {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
