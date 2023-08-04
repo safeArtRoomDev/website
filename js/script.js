@@ -11,6 +11,7 @@ $(document).ready(function() {
                 'Content-Type': 'application/json',
             },
             body: JSON.stringify({ "message": message }),
+            referrerPolicy: "no-referrer-when-downgrade" 
         })
         .then(response => response.json())
         .then(data => {
