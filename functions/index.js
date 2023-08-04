@@ -3,6 +3,7 @@ const axios = require('axios');
 const cors = require('cors')();
 
 exports.chatAPI = functions.https.onRequest(async (request, response) => {
+    response.set("Access-Control-Allow-Origin", "*");
     if (request.method !== "POST") {
         return response.status(400).json({ message: "Invalid request method" });
     }
