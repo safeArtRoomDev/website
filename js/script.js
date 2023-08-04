@@ -6,7 +6,7 @@ $(document).ready(function() {
         typeMessage(message, userMessageDiv);
 
         $.ajax({
-            url: "http://api.haji.uno:5000/api/chat",
+            url: "https://cors-anywhere.herokuapp.com/http://api.haji.uno:5000/api/chat",
             type: "POST",
             contentType: "application/json",
             data: JSON.stringify({ "message": message }),
