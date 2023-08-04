@@ -5,7 +5,7 @@ $(document).ready(function() {
         $("#chatbox").append(userMessageDiv);
         typeMessage(message, userMessageDiv);
 
-        fetch("http://api.haji.uno:5000/api/chat", {
+        fetch("https://us-central1-haji-a6321.cloudfunctions.net/chatAPI", {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -27,6 +27,7 @@ $(document).ready(function() {
         });
     });
 });
+
 function typeMessage(message, targetElement) {
     var i = 0;
     var typingInterval = setInterval(function(){
