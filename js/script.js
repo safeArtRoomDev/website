@@ -5,22 +5,25 @@ $(document).ready(function() {
         $("#chatbox").append(userMessageDiv);
         typeMessage(message, userMessageDiv);
 
-        $.ajax({
-            url: "https://cors-anywhere.herokuapp.com/http://api.haji.uno:5000/api/chat",
-            type: "POST",
-            contentType: "application/json",
-            data: JSON.stringify({ "message": message }),
-            success: function(data) {
-                var aiResponseDiv = $("<div class='aiMessage'><b>체르타:</b> </div>");
-                $("#chatbox").append(aiResponseDiv);
-                typeMessage(data.message, aiResponseDiv);
-                $("#message").val("");
+        fetch("http://api.haji.uno:5000/api/chat", {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
             },
-            error: function() {
-                var errorMessageDiv = $("<div class='aiMessage'><b>체르타:</b> </div>");
-                $("#chatbox").append(errorMessageDiv);
-                typeMessage("Sorry, I couldn't process your message.", errorMessageDiv);
-            }
+            body: JSON.stringify({ "message": message }),
+        })
+        .then(response => response.json())
+        .then(data => {
+            var aiResponseDiv = $("<div class='aiMessage'><b>체르타:</b> </div>");
+            $("#chatbox").append(aiResponseDiv);
+            typeMessage(data.message, aiResponseDiv);
+            $("#message").val("");
+        })
+        .catch((error) => {
+            console.error('Error:', error);
+            var errorMessageDiv = $("<div class='aiMessage'><b>체르타:</b> </div>");
+            $("#chatbox").append(errorMessageDiv);
+            typeMessage("Sorry, I couldn't process your message.", errorMessageDiv);
         });
     });
 });
