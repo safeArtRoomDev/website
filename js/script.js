@@ -4,7 +4,7 @@ $(document).ready(function() {
         var userMessageDiv = $("<div class='userMessage'><b>사용자:</b> </div>");
         $("#chatbox").append(userMessageDiv);
         typeMessage(message, userMessageDiv);
-
+        $('#message').val('');
         fetch("https://us-central1-haji-a6321.cloudfunctions.net/chatAPI", {
             method: 'POST',
             headers: {
@@ -40,3 +40,15 @@ function typeMessage(message, targetElement) {
         }
     }, 10); // 타이핑 속도 조절 (단위: ms)
 }
+
+$("#message").keypress(function(e) {
+    if (e.keyCode == 13 && !e.shiftKey) {
+        e.preventDefault(); // prevent the default action (scroll / move caret)
+        $("#submit").click(); // trigger the button click
+    }
+});
+
+$("#message").on('input', function () {
+    this.style.height = 'auto';
+    this.style.height = (this.scrollHeight) + 'px';
+});
