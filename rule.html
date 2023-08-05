@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Basic -->
+  <meta charset="utf-8" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  
+
+  <title>건전예술방</title>
+  <meta content="건전예술방" property="og:title" />
+  <meta content="건전예술방 웹사이트" property="og:description" />
+  <meta content="https://embed.com/this-is-the-site-url" property="og:url" />
+  <meta content="https://embed.com/embedimage.png" property="og:image" />
+  <meta content="#43B581" data-react-helmet="true" name="theme-color" />
+  <!-- slider stylesheet -->
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+
+  <!-- fonts style -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Poppins:400,700|Raleway:400,700&display=swap"
+    rel="stylesheet" />
+
+  <!-- Custom styles for this template -->
+  <link href="css/style.css" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="css/responsive.css" rel="stylesheet" />
+  <style>
+     .rule-section-container {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        
+        .rule-section-1 {
+            background: url("../images/f1.png") center no-repeat;
+            border: 2px solid #d3cdcd;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease-in-out;
+            width:auto;
+            height:300px;
+            
+        }.rule-section-1:hover {
+            transform: scale(1.05);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        .rule-section {
+            border: 2px solid #d3cdcd;
+            padding: 20px;
+            border-radius: 5px;
+            background: rgba(255, 255, 255, 0.1);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease-in-out;
+        }
+
+        .rule-section:hover {
+            transform: scale(1.05);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        .rule-section-title {
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+</style>
+    </head>
+    
+    <body class="sub_page">
+        <div class="hero_area_a">
+          <!-- header section strats -->
+          <header class="header_section">
+            <div class="container-fluid">
+              <nav class="navbar navbar-expand-lg custom_nav-container">
+                <div class="navbar-collapse" id="">
+                  <div class="custom_menu-btn">
+                    <button onclick="openNav()">
+                      <span class="s-1"> </span>
+                      <span class="s-2"> </span>
+                      <span class="s-3"> </span>
+                    </button>
+                  </div>
+                  <div id="myNav" class="overlay">
+                    <div class="overlay-content">
+                      <a href="index.html">메인</a>
+                      <a href="rule.html">규칙</a>
+                      <a href="attention.html">공지사항</a>
+                      <a href="ai.html">인공지능 도우미</a>
+                    </div>
+                  </div>
+                </div>
+              </nav>
+            </div>
+          </header>
+          <!-- end header section -->
+        </div>
+     <!-- Rule section start -->
+    <section class="about_section layout_padding">
+        <div class="container">
+            <div class="heading_container heading_center">
+                <h2>건전예술방 규칙</h2>
+            </div>
+            <div class="layout_padding2">
+                <div class="rule-section-container">
+                    <div class="rule-section-1">
+                    </div>
+                    <div class="rule-section">
+                        <div class="rule-section-title">
+                            [작품 활동에 대한 규칙]
+                        </div>
+                        <div class="rule-section-content">
+                            현재 사이트는 작성중입니다.
+                        </div>
+                        
+                    </div>
+
+                    <div class="rule-section">
+                        <div class="rule-section-title">
+                            죄송합니다.
+                        </div>
+                        <div class="rule-section-content">
+                            공사중.
+                        </div>
+                    </div>
+                    <!-- 추가적인 규칙 섹션들을 이곳에 넣어주세요 -->
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Rule section end -->
+        <script>
+            function openNav() {
+              document.getElementById("myNav").classList.toggle("menu_width");
+              document
+                .querySelector(".custom_menu-btn")
+                .classList.toggle("menu_btn-style");
+            }
+          </script>
+    </body>
+
+</html>
