@@ -38,15 +38,28 @@
         width: 80%;
         margin: 0 auto;
         }
-      .userMessage {
-            color: #1bac63;
-            margin: 10px 0;
-        }
-      .aiMessage {
-            color: #007bff;
-            margin: 10px 0;
-        }
+.userMessage, .aiMessage {
+    display: block; /* 박스의 크기가 내용에 따라 결정됩니다. */
+    margin: 10px 0;       /* 위아래 간격 조정 */
+    max-width: fit-content;       /* 너무 긴 메시지에 대해 줄바꿈을 유발하도록 설정 */
+    word-wrap: break-all; /* 긴 단어가 박스를 넘어갈 경우 줄바꿈 */
+}
 
+.userMessage {
+    background-color: #E8FFED;
+    padding: 10px;
+    border-radius: 15px;
+    text-align: left; /* 텍스트 왼쪽 정렬 */
+    clear: both; /* 이 부분은 이전 메시지 박스와 겹치지 않게 합니다. */
+}
+
+.aiMessage {
+    background-color: #E5E9FF;
+    padding: 10px;
+    border-radius: 15px;
+    text-align: left; /* 텍스트 왼쪽 정렬 */
+    clear: both; /* 이 부분은 이전 메시지 박스와 겹치지 않게 합니다. */
+}
       #message {
       flex-grow: 1;
       padding: 10px;
