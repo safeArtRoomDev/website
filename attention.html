@@ -1,13 +1,185 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8" />
-        <link rel="icon" href="/images/devicon.png"/>
-        <link rel="apple-touch-icon" href="/images/devicon.png"/>
-        <title>건전예술방 공지사항</title>
-    </head>
+<head>
+    <!-- Basic -->
+  <meta charset="utf-8" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <link rel="icon" href="/images/devicon.png"/>
+  <link rel="apple-touch-icon" href="/images/devicon.png"/>
+
+  <title>건전예술방</title>
+  <meta content="건전예술방" property="og:title" />
+  <meta content="건전예술방 블로그" property="og:description" />
+  <meta content="https://embed.com/this-is-the-site-url" property="og:url" />
+  <meta content="https://embed.com/embedimage.png" property="og:image" />
+  <meta content="#43B581" data-react-helmet="true" name="theme-color" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        .card {
+            border-radius: 20px;
+            transition: transform .2s;
+            margin-bottom: 30px;
+            
+        }
+        .card:hover {
+            transform: scale(1.005);
+        }
+        .nana-container {
+        display: inline;
+        justify-content: center;
+        align-items: center;
+      
+        padding: 10px;
+        margin: 40px 0;  /* SVG 부분을 좀 더 내림 */
+    }
+
+    .nana {
+        max-height: 450px;
+        display: block;
+        margin: auto;
+    }
+
+    .separator {
+        height: 10px;
+        background-color: #000000;
+        margin-top: 40px;  /* 헤더 밑에 좀 더 내려서 선 추가 */
+    }
+    .separator1 {
+        height: 10px;
+        background-color: #ffffff;
+        margin-top: 40px;  /* 헤더 밑에 좀 더 내려서 선 추가 */
+    }
+
+    </style>
+    <!-- slider stylesheet -->
+  <link rel="stylesheet" type="text/css"
+  href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+
+<!-- bootstrap core css -->
+<link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+
+<!-- fonts style -->
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Poppins:400,700|Raleway:400,700&display=swap"
+  rel="stylesheet" />
+
+<!-- Custom styles for this template -->
+<link href="css/style.css" rel="stylesheet" />
+<!-- responsive style -->
+<link href="css/responsive.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="hero_area_a">
+    <!-- header section strats -->
+    <header class="header_section">
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg custom_nav-container">
+          <div class="navbar-collapse" id="">
+            <div class="custom_menu-btn">
+              <button onclick="openNav()">
+                <span class="s-1"> </span>
+                <span class="s-2"> </span>
+                <span class="s-3"> </span>
+              </button>
+            </div>
+            <div id="myNav" class="overlay">
+              <div class="overlay-content">
+                <a href="index.html">메인</a>
+                <a href="rule.html">규칙</a>
+                <a href="attention.html">공지사항</a>
+                <a href="ai.html">인공지능 도우미</a>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- end header section -->
+    <div class="separator"></div>
+  </div>
+  <div class="nana-container">
+    <object type="image/svg+xml" data="/images/fasd.svg" class="nana"></object>
+  </div>
+    <div class="separator"></div>
+    <main class="container mt-3">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card" data-toggle="modal" data-target="#myModal">
+                    <img src="/images/45-1.png" class="card-img-top" alt="Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Blog Post Title</h5>
+                        <p class="card-text">This is the content of the blog post.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Repeat the above 'col-md-4' div for each blog post -->
+            <div class="col-md-4">
+              <div class="card" data-toggle="modal" data-target="#myModal">
+                  <img src="/images/45-1.png" class="card-img-top" alt="Image">
+                  <div class="card-body">
+                      <h5 class="card-title">Blog Post Title</h5>
+                      <p class="card-text">This is the content of the blog post.</p>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card" data-toggle="modal" data-target="#myModal">
+                <img src="/images/45-1.png" class="card-img-top" alt="Image">
+                <div class="card-body">
+                    <h5 class="card-title">Blog Post Title</h5>
+                    <p class="card-text">This is the content of the blog post.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card" data-toggle="modal" data-target="#myModal">
+              <img src="/images/45-1.png" class="card-img-top" alt="Image">
+              <div class="card-body">
+                  <h5 class="card-title">Blog Post Title</h5>
+                  <p class="card-text">This is the content of the blog post.</p>
+              </div>
+          </div>
+      </div>
+      </div>
+    </main>
+    <!-- The Modal -->
+    <div class="modal" id="myModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title">Blog Post Title</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <p>This is the content of the blog post.</p>
+                    <img src="/images/45-1.png" alt="Image" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="separator1"></div>
+    <section class="container-fluid footer_section">
+      <div class="social_container">
+        <h4>
+          SafeArtRoom DevTeam
+        </h4>
+        
+      </div>
+      
+    </section>
+  
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        function openNav() {
+          document.getElementById("myNav").classList.toggle("menu_width");
+          document
+            .querySelector(".custom_menu-btn")
+            .classList.toggle("menu_btn-style");
+        }
+      </script>
     
-    <body>
-        죄송합니다. 현재 페이지는 개발중입니다.
-    </body>
+</body>
 </html>
