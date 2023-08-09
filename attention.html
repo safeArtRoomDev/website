@@ -26,19 +26,37 @@
             transform: scale(1.005);
         }
         .nana-container {
-        display: inline;
-        justify-content: center;
-        align-items: center;
-      
-        padding: 10px;
-        margin: 40px 0;  /* SVG 부분을 좀 더 내림 */
-    }
+    display: inline;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin: 40px 0;  /* SVG 부분을 좀 더 내림 */
+}
 
+.nana {
+    max-height: 450px;
+    display: block;
+    margin: auto;
+    position: relative;
+    left: -120px;
+}
+
+/* 화면 크기가 768px 미만일 때의 스타일 */
+@media (max-width: 767px) {
     .nana {
-        max-height: 450px;
-        display: block;
-        margin: auto;
+        max-height: 350px; /* 예를 들어 최대 높이를 350px로 조절 */
+        left: -80px; /* 좌측 여백을 조절 */
     }
+}
+
+/* 화면 크기가 480px 미만일 때의 스타일 */
+@media (max-width: 479px) {
+    .nana {
+        max-height: 250px; /* 예를 들어 최대 높이를 250px로 조절 */
+        left: -40px; /* 좌측 여백을 조절 */
+    }
+}
+
 
     .separator {
         height: 10px;
